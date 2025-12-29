@@ -90,7 +90,7 @@ button:hover{
 }
 .about h2 {
     font-size: 60px;
-    padding: 60px;
+    padding-bottom: 20px;
     color: blueviolet;
 }
 .about ul {
@@ -256,4 +256,5 @@ footer a{
     .service-card{
         width: 90%;
     }
+
 }
