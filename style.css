@@ -1,0 +1,259 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* Header */
+header{
+    background-color: rgba(59, 59, 59, 0.612);
+    color: rgb(255, 255, 255);
+    height: 8vh;
+    width: 80vw;
+    display: flex;
+    margin: 0 auto;
+    border-radius: 5vh;
+    align-items: center;
+    position: sticky;
+    padding: 0 2vw;
+    top: 2vh;
+    justify-content: space-between;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 25px;
+    font-size: 20px;
+}
+
+nav a:hover{
+    color: rgb(0, 0, 0);
+}
+
+.menu{
+    display: none;
+}
+
+/* home section */
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 50px;
+    background: aliceblue;
+}
+
+
+.home-text h1{
+    font-size: 60px;
+}
+.home-text span{
+    color: blueviolet;
+}
+.home-text p{
+    font-size: 30px;
+    margin: 25px 0;
+}
+
+.home-image img{
+    margin-top: 0;
+    max-width: 40vw;
+   height: auto;
+   border-radius: 10px;
+}
+
+button{
+    padding: 12px 25px;
+    font-size: 20px;
+    background: rgba(137, 43, 226, 0.546);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(137, 43, 226);
+}
+
+/* about  */
+.about{
+    text-align: center;
+    padding: 90px 90px;
+    background: aliceblue;
+}
+.about p {
+    font-size: 30px;
+}
+.about h2 {
+    font-size: 60px;
+    padding: 60px;
+    color: blueviolet;
+}
+.about ul {
+    display: inline-block;
+}
+.about ul li{
+    text-align: left;
+    font-size: 30px;
+    margin: 8px 0;
+}
+
+/* services */
+
+.services{
+    background: aliceblue;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.services h2{
+    padding-bottom: 20px;
+    font-size: 60px;
+    color: blueviolet;
+}
+.service{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+.service-card{
+    color: rgb(62, 59, 59);
+    background: rgba(137, 43, 226, 0.546);
+    text-align: center;
+    padding: 70px 30px;
+    width: 300px;
+    border-radius: 12px;
+}
+.service-card:hover{
+    background: rgb(137, 43, 226);
+    color: rgb(62, 59, 59);
+}
+.service h3{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.service p{
+    font-size: 30px;
+}
+
+/* contact section */
+.contact{
+    background: aliceblue;
+    text-align: center;
+    padding: 70px 30px;
+}
+.contact h2{
+    padding-bottom: 20px;
+    font-size: 60px;
+    color: blueviolet;
+}
+form{
+    margin: 40px auto;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+input{
+    font-size: 20px;
+    padding: 10px;
+    border: gray;
+    border-radius: 6px;
+}
+
+textarea{
+    font-size: 20px;
+    padding: 10px;
+    border: gray;
+    border-radius: 6px;
+    resize: none;
+}
+
+.submit{
+    padding: 12px 25px;
+    font-size: 20px;
+    background: rgba(137, 43, 226, 0.546);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.submit:hover{
+    background-color: rgb(137, 43, 226);
+}
+
+footer{
+    background: rgb(137, 43, 226);
+    text-align: center;
+    padding: 10px;
+    color: black;
+    font-size: 20px;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+    margin: 0 25px;
+    font-size: 20px;
+}
+
+/* responsive design */
+
+@media (max-width: 600px) {
+
+    /* Header */
+    header{
+        padding: 0 4vw;
+    }
+   .menu{
+        display: block;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    nav{
+        display: none;
+    }
+
+    nav.active{
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(59, 59, 59, 0.612);
+        position: absolute;
+        text-align: right;
+        top:  9vh;
+        width: 35%;
+        height: 25vh;
+        right: 0;
+        justify-content: space-evenly;
+        border-radius: 5vh;
+        font-weight: 800;
+        
+    }
+    /* home secton */
+
+    .home{
+        flex-direction: column;
+        text-align: center;
+    }
+    .home-text{
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .home-image{
+        text-align: center;
+    }
+
+    /* services section    */
+    .service{
+        flex-direction: column;
+        align-items: center;
+    }
+    .service-card{
+        width: 90%;
+    }
+}
